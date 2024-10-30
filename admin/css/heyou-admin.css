@@ -1,0 +1,166 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+ .heyou-good {
+    font-size: 30px;
+    color: #16D39A;
+ }
+ .image-preview-wrapper {
+     position: relative;
+ }
+ .image-preview-wrapper #heyou-remove-selected {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #FFF;
+    border-radius: 50%;
+    transition: .3s ease;
+ }
+ .image-preview-wrapper #heyou-remove-selected:hover {
+     background-color: red;
+     color: #FFF;
+     cursor: pointer;
+ }
+
+.heyou-analytics-grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+.heyou-analytics-grid > .heyou-analytics-card {
+    background: #f4f4f4;
+    border: 1px solid rgba(0,0,0,.06);
+    border-radius: 0.25rem;
+    margin: 10px;
+    padding: 15px;
+}
+.heyou-analytics-grid > .heyou-analytics-card h3 {
+    margin: 0 0 10px 0 !important;
+}
+.heyou-analytics-grid > .heyou-analytics-card h3 sup {
+    font-size: 14px;
+    color: black;
+}
+.heyou-analytics-grid > .heyou-analytics-card > div > span {
+    display: block;
+    color: #5f5f5f;
+    margin-bottom: 10px;
+}
+.heyou-analytics-grid .progress {
+    display: flex;
+    height: 1rem;
+    font-size: .75rem;
+    background-color: #EEE;
+    border-radius: 0.25rem;
+}
+.heyou-analytics-grid .progress-bar {
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #FFF;
+    text-align: center;
+    background-color: #16D39A;
+    -webkit-transition: width .6s ease;
+    transition: width .6s ease;
+}
+
+@media screen and (max-width: 512px) {
+    .heyou-analytics-grid {
+        grid-template-columns: 100% !important;
+    }
+}
+
+.heyou-notice {
+    background: #fff;
+    border: 1px solid #c3c4c7;
+    border-left-width: 4px;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 4%);
+    border-radius: 2px;
+    margin: 5px 15px 2px 0;
+    padding: 1px 12px;
+    font-weight: bold;
+}
+.heyou-notice.heyou-warning {
+    border: 2px solid #ff6600;
+    border-left-width: 4px;
+}
+.heyou-notice.heyou-success {
+    border: 2px solid #16D39A;
+    border-left-width: 4px;
+}
+#heyou-admin-post-type-posts {
+    vertical-align: top;
+    word-break: break-word;
+}
+.heyou-admin-pagination {
+    margin-top: 10px;
+    text-align: left;
+}
+.heyou-admin-pagination > span {
+    padding: 2px 5px;
+    border: 1px solid;
+    border-radius: 50%;
+    margin: 10px 2px;
+    display: inline-block;
+}
+.heyou-admin-pagination > span.selected {
+    font-weight: bold;
+    background: #2271b1;
+    color: white;
+}
+.heyou-admin-pagination > span:hover {
+    background: #2271b1;
+    color: white;
+    cursor: pointer;
+}
+.form-table-rules {
+    display: grid;
+    grid-template-columns: 35% 20% 45%;
+    background-color: #FFF;
+}
+.form-table-rules > div {
+    padding: 10px;
+    border-right: 1px solid rgb(191, 191, 191);
+}
+.form-table-rules > div:last-child {
+    border-right: unset !important;
+}
+.form-table-rules select {
+    width: 100%;
+}
+
+.heyou-sortby {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.heyou-sortby label {
+    vertical-align: baseline;
+}
+
+@media screen and (max-width: 768px) {
+    .heyou-sortby {
+        flex-direction: column;
+        align-items: baseline !important;
+    }
+    .heyou-sortby label {
+        display: block;
+        margin: 5px 0;
+    }
+}
+
+#heyou-active-videos td p {
+    text-align: center;
+    font-size: 1.25vw;
+}
+
+select[name=heyou-active-videos_length] {
+    width: 50px;
+}
